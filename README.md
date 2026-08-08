@@ -2,7 +2,7 @@ Simulador de Atendimento
 
 Projeto desenvolvido em JavaScript para a disciplina de Estrutura de Dados, com o objetivo de praticar a implementação e utilização de uma estrutura de dados do tipo Fila (Queue).
 
-O sistema simula um atendimento de clientes, onde o primeiro cliente a entrar na fila é o primeiro a ser atendido, seguindo o princípio FIFO (First In, First Out).
+O sistema simula o atendimento de clientes, seguindo o princípio FIFO (First In, First Out), no qual o primeiro cliente a entrar na fila é o primeiro a ser atendido.
 
 Funcionalidades
 Adicionar clientes à fila
@@ -27,7 +27,7 @@ JavaScript
 Node.js
 prompt-sync
 Estrutura do projeto
-trabalho-estrutura-de-dados/
+simulador-fila-atendimento/
 ├── atendimento.js
 ├── package.json
 ├── package-lock.json
@@ -35,16 +35,16 @@ trabalho-estrutura-de-dados/
 └── README.md
 Como executar
 1. Clone o repositório
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/ArthurrDias/simulador-fila-atendimento.git
 2. Entre na pasta do projeto
-cd trabalho-estrutura-de-dados
+cd simulador-fila-atendimento
 3. Instale as dependências
 npm install
 4. Execute o programa
 node atendimento.js
 Como funciona
 
-A fila é implementada por meio da classe Queue, que possui métodos para controlar os clientes:
+A fila é implementada por meio da classe Queue, que possui métodos responsáveis pelo gerenciamento dos clientes:
 
 Método	Função
 enqueue()	Adiciona um cliente à fila
@@ -52,10 +52,10 @@ dequeue()	Remove e atende o próximo cliente
 peek()	Consulta o próximo cliente
 isEmpty()	Verifica se a fila está vazia
 size()	Retorna a quantidade de clientes
-toString()	Exibe os clientes da fila
-FIFO
+toString()	Exibe os clientes presentes na fila
+FIFO — First In, First Out
 
-O sistema utiliza o conceito FIFO (First In, First Out):
+O sistema utiliza o princípio FIFO (First In, First Out).
 
 Primeiro a entrar
        ↓
@@ -67,16 +67,18 @@ Primeiro a entrar
        ↓
 Primeiro a sair
 
-Portanto, se os clientes entrarem na seguinte ordem:
+Por exemplo, se os clientes entrarem na seguinte ordem:
 
 João → Maria → Pedro
 
-o atendimento ocorrerá:
+o atendimento ocorrerá na mesma ordem:
 
 João → Maria → Pedro
 Objetivo acadêmico
 
-Este projeto foi desenvolvido como atividade prática da disciplina de Estrutura de Dados, com foco na compreensão e implementação de uma estrutura de fila utilizando JavaScript.
+Este projeto foi desenvolvido como atividade prática da disciplina de Estrutura de Dados, com foco na compreensão e implementação de uma estrutura de fila utilizando JavaScript e na aplicação do princípio FIFO em uma situação de atendimento.
+
+Autor
 
 Arthur Dias
 
